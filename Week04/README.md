@@ -2,7 +2,7 @@
 
 ## Tries
 
-Implement a program that reads in a number of strings from a file and then checks if another string is found in the tree.
+Implement a program that reads in a number of strings from a file and then checks if another string is found in the trie.
 
 Such a program, of course, consists of two parts:
 
