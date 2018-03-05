@@ -17,3 +17,15 @@ To build a suffix tree from a suffix trie, you simply have to compress paths. If
 Try implementing this.
 
 What is the complexity of this algorithm?
+
+## Using a suffix tree for exact pattern matching
+
+Say that we want to find the occurrences of a pattern (of length m) in text (of length n), and that we know that the pattern occurs at least once. Using a suffix tree we can solve this problem in worst case time O(m + z), where z is the number of occurrences, but can it be done faster in the best case since we know that the pattern occurs at least once in the text?
+
+## Using a suffix tree for counting the number of non-overlapping occurrences of pattern
+
+Using a suffix tree for a text (of length n), we can easily count the number of occurrences of a pattern (of length m) in the text in time O(m). How fast can you count the maximal number of non-overlapping occurrences of a pattern (of length m) in the text?
+
+## Suffix links
+
+Recall the definition of a suffix link from the lecture. Show that if u is a node in a suffix tree, then the suffix link, s(u), is also a node.
