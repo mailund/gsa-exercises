@@ -28,4 +28,4 @@ Using a suffix tree for a text (of length n), we can easily count the number of 
 
 ## Suffix links
 
-Recall the definition of a suffix link from the lecture. Show that if u is a node in a suffix tree, then the suffix link, s(u), is also a node in the suffix tree.
+Recall the definition of a suffix link from the lecture. Show that if u is a node in a suffix tree, then the suffix link, s(u), is also a node.
