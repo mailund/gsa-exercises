@@ -51,7 +51,6 @@ struct read_search_info {
     const char *quality;
     const char *cigar;
     const char *pattern;
-    struct trie *patterns_trie;
     struct search_info *search_info;
 };
 
@@ -65,9 +64,6 @@ static struct read_search_info *empty_read_search_info()
     info->read = 0;
     info->quality = 0;
     info->cigar = 0;
-#if 0
-    info->patterns_trie = empty_trie();
-#endif
     info->search_info = 0;
 
     return info;
@@ -75,16 +71,12 @@ static struct read_search_info *empty_read_search_info()
 
 static void delete_read_search_info(struct read_search_info *info)
 {
-#if 0
-    delete_trie(info->patterns_trie);
-#endif
     free(info);
 }
 
 static void match_callback(size_t index, void * data)
 {
     struct read_search_info *info = (struct read_search_info*)data;
-    // FIXME: I'm not sure if I should print the read or the pattern...
     sam_line(info->search_info->sam_file,
              info->read_name,
              info->ref_name,
@@ -99,18 +91,6 @@ static void pattern_callback(const char *pattern, const char *cigar, void * data
 {
     struct read_search_info *info = (struct read_search_info*)data;
     
-    // we use the trie to make sure we do not search for the same pattern
-    // more than once
-#if 0
-    if (string_in_trie(info->patterns_trie, pattern))
-        return; // nothing to see here, move along.
-#endif
-    
-#if 0
-    // NB: the order is important here -- info->patterns->used will be updated
-    // when we add the pattern to the vector, so we insert in the trie first.
-    add_string_to_trie(info->patterns_trie, pattern, 1); // id 1 is arbitrary...
-#endif
     info->cigar = cigar;
     info->pattern = pattern;
     int no_refs = info->search_info->records->sequences->used;
