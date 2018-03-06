@@ -8,7 +8,7 @@ Instead of having characters associated with edges, use an index into the string
 
 Modify your trie code to do this.
 
-## Building a suffix tree from a suffix array
+## Building a suffix tree from a suffix trie
 
 Prove that successive indices when you move along a non-branching path in the suffix trie differ by exactly one. That is, if you take a sequence of non-branching nodes in trie, you get an interval of indices into your string.
 
