@@ -29,6 +29,8 @@ My implementation is a little convoluted because it uses call-backs to tie the d
 
 For completing this part of the project, you should be able to simply combine code you have written in the exercises and previous projects. You should [already have parsers for FASTA and FASTQ](https://github.com/mailund/gsa-exercises/tree/master/Week01); you have implemented [several](https://github.com/mailund/gsa-exercises/tree/master/Project01) [exact pattern-matching](https://github.com/mailund/gsa-exercises/tree/master/Project02) algorithms; you have code for [generating all strings at a given edit-distance from a core string](https://github.com/mailund/gsa-exercises/tree/master/Week02), and while you have not output matches in SAM format before, this should be manageable if you have a read, the CIGAR string describing an alignment, and the position of the match.
 
+You are free to choose any of the exact pattern-matching algorithms you have implemented to use in the read-mapper. Your aim is to make the mapper as fast as possible, so put some thought and experiments into choosing wisely.
+
 ## Step 2: Approximate pattern matching
 
 **FIXME:** Algorithm for approximate matching
