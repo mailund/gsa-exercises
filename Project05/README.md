@@ -4,7 +4,9 @@ The final project of this class, as we have hinted at from day one, is the imple
 
 Since it is the final project, you have more freedom in how you approach the project, but the minimum requirement of your read mapper is: *Your read-mapper should be able to find all approximative matches at a given edit-distance for all reads in a FASTQ file.*
 
-For the first week of the project, you should implement step 1, where you simply do exact pattern matching of all reads. For the second week, you should implement step 2 and do approximative pattern matching. The last week, you should aim at making your read mapper as fast as you possibly can—step 3—where all tricks count. 
+For the first week of the project, you should implement step 1, where you simply do exact pattern matching of all reads. For the second week, you should implement step 2 and do approximative pattern matching. The last week, you should aim at making your read mapper as fast as you possibly can—step 3—where all tricks count.
+
+We have provided some test data and read mappers you can use to test your program against, described below.
 
 ## Evaluation scripts
 
