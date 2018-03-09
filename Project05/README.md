@@ -4,7 +4,9 @@ The final project of this class, as we have hinted at from day one, is the imple
 
 Since it is the final project, you have more freedom in how you approach the project, but the minimum requirement of your read mapper is: *Your read-mapper should be able to find all approximative matches at a given edit-distance for all reads in a FASTQ file.*
 
+We have written some scripts for testing and evaluating read mappers that you can [get from here](https://github.com/mailund/gsa-read-mapper). These should work on any machine where you have `bash`, `make` and a C compiler installed. On Linux, you are likely to have these tools installed already. On Windows, you can install [Cygwin](https://www.cygwin.com) to get the tools. On macOS, you can install the necessary [command line tools](http://osxdaily.com/2014/02/12/install-command-line-tools-mac-os-x/) or install the command line tools in Preferences in Xcode.
 
+![](Xcode-command-line-tools.png)
 
 ## Step 1: Control flow of a read-mapper
 
