@@ -4,11 +4,19 @@ The final project of this class, as we have hinted at from day one, is the imple
 
 Since it is the final project, you have more freedom in how you approach the project, but the minimum requirement of your read mapper is: *Your read-mapper should be able to find all approximative matches at a given edit-distance for all reads in a FASTQ file.*
 
+## Evaluation scripts
+
 We have written some scripts for testing and evaluating read mappers that you can [get from here](https://github.com/mailund/gsa-read-mapper). These should work on any machine where you have `bash`, `make` and a C compiler installed. On Linux, you are likely to have these tools installed already. On Windows, you can install [Cygwin](https://www.cygwin.com) to get the tools. On macOS, you can install the necessary [command line tools](http://osxdaily.com/2014/02/12/install-command-line-tools-mac-os-x/) or install the command line tools in Preferences in Xcode.
 
 ![](Xcode-command-line-tools.png)
 
-## Step 1: Control flow of a read-mapper
+If you have any problems with the test scripts, let us know, so we can fix any issues. Even better, make a pull-request on GitHub to the scripts, if you know how to fix your problems. If you cannot get it to work, we will adapt to that; the project material is still experimental since we haven’t used them before, but we hope they will help you in the project.
+
+## Steps in developing your read mapper
+
+To guide you through implementing your read mapper, we have split the project into three steps, described below. We want you to hand in progress reports at the end of each step; the report after step 3 will be the final report on the project.
+
+### Step 1: Control flow of a read mapper
 
 There are three basic steps your read-mapper should implement:
 
@@ -20,7 +28,7 @@ For the first step in building your read-mapper, you can focus on exact matching
 
 From the exercises you did in the first week, you should already have parsers for FASTA and FASTQ files. From [Project 1](https://github.com/mailund/gsa-exercises/tree/master/Project01), [Project 2](https://github.com/mailund/gsa-exercises/tree/master/Project02) and [Project 4](https://github.com/mailund/gsa-exercises/tree/master/Project04) you should have implementations for exact pattern matching. You can pick any of those for your read-mapper. The only new code you need to implement for step 1 of the project is for outputting matches in SAM format. Other than that, you should be able to build the tool by combining code you have already written.
 
-## Step 2: Approximate pattern matching
+### Step 2: Approximate pattern matching
 
 The second step in developing your read-mapper is adapting it to do approximative pattern matching. Your program should be able to take the maximal edit-distance for matches you allow as a parameter and should find all matches within that distance.
 
@@ -33,7 +41,7 @@ We suggest that you implement one of the following solutions:
 
 If you use a suffix tree or a suffix array for your approximative pattern matching you should split preprocessing from searching in your tool, so the preprocessing step can be done, and the result saved to file(s), before the search.
 
-## Step 3: Go-faster stripes
+### Step 3: Go-faster stripes
 
 The final step in the project is open-ended. For this step, you should use all the tricks you can think of to make your read mapper as fast as possible. Measure its running time relative to `bwa` on the same data (you can do this using the scripts in the [read mapper evaluation setup](https://github.com/mailund/gsa-read-mapper) to do this).
 
