@@ -56,5 +56,5 @@ up the depth-fist number DF(*l*) of leaf *l* in time O(1).
 Let rDF be the reverse, i.e. *l* = rDF(DF(*l*). Explain how to compute
 rDF in time O(*n*).
 
-Think about how DF and DF can be used to implement the algorithm without an
+Think about how DF and rDF can be used to implement the algorithm without an
 explicit representation of the leaf-lest *LL*(*v*).
