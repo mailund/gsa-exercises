@@ -49,7 +49,7 @@ Recall how depth-first numbering of the leaves in the suffix tree T(*S*) is
 used in the algorithm for finding all occurrences of branching tandem
 repeats in a string *S* of length *n*.
 
-Explain how we can make a table DF in time O(*n*) suchthat we can look
+Explain how we can make a table DF in time O(*n*) such that we can look
 up the depth-fist number DF(*l*) of leaf *l* in time O(1).
 
 Let rDF be the reverse, i.e. *l* = rDF(DF(*l*). Explain how to compute
