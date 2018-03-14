@@ -18,10 +18,9 @@ repeats?
 Recall the algorithm for finding all occurrences of branching tandem
 repeats in a string of length *n* in time O(*n* log *n*).
 
-What is the best case running time of this algorithm? Explain
-and give an example of best case input?
+What is the best case running time of this algorithm? Can you give an example of best case input?
 
-What is the worst case running time? Explain and give an example of
+What is the worst case running time? Can you give an example of
 worst case input?
 
 ## Finding all occurrenes of non-branching tandem repeats
