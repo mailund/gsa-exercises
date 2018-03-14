@@ -56,4 +56,4 @@ Let rDF be the reverse, i.e. *l* = rDF(DF(*l*). Explain how to compute
 rDF in time O(*n*).
 
 Think about how DF and rDF can be used to implement the algorithm without an
-explicit representation of the leaf-lest *LL*(*v*).
+explicit representation of the leaf-list *LL*(*v*).
