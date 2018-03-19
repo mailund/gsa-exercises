@@ -28,11 +28,11 @@ Try to implement this strategy to build a suffix array from a suffix tree.
 
 In the lecture, we said that we could build the suffix array for a string of length *n* in time O(*n*<sup>2</sup>) using radix-sort. Explain how to do this.
 
-## Building a suffix array in linear time using the Skew-algorith
+## Building a suffix array in linear time using the Skew-algorithm
 
 In the lecture we presented the Skew-algorithm that can build a suffix array in linear time. 
 
-We claimed that we can construct *SA*<sup>0</sup> in time O(*n*) using radix-sort where the ordering of the suffixes s[1..], s[4..] etc. are determind in constant time using *SA*<sup>12</sup>. Explain how to do this.
+We claimed that we can construct *SA*<sup>0</sup> in time O(*n*) using radix-sort, where the ordering of the suffixes s[1..], s[4..] etc. are determind in constant time using *SA*<sup>12</sup>. Explain how to do this.
 
 Explain why the Skew-algorithm divides the suffixes into the two groups "*i* mod 3 != 0" and "*i*mod 3 = 0" instead of just dividing into the two groups "*i* mod 2 != 0" and "*i* mod 2 = 0" of equal size, i.e. the odd and even suffixes.
 
