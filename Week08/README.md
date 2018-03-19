@@ -26,6 +26,6 @@ Try to implement this strategy to build a suffix array from a suffix tree.
 
 ## Building a suffix array without using a suffix tree
 
-In the lecture, we said that we could build the suffix array for a string of length *n* in time O(*n*^2) using radix-sort. Explain how to do this.
+In the lecture, we said that we could build the suffix array for a string of length *n* in time O(*n*^2^) using radix-sort. Explain how to do this.
 
 In the lecture, we claim that we can construct SA$^0$ in time O(*n*) using radix-sort where the ordering of the suffixes s[1..], s[4..] etc. are determind in constant time using SA$^{12}$. Explain how to do this.
