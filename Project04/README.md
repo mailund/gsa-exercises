@@ -30,7 +30,7 @@ To test your application, you can use the following text files, with correspondi
 
 ## Evaluation
 
-You should upload your solution to Blackboard before the lecture  3/4. Your TA will then pair up groups (if you haven’t done that already) and exchange your solution with another. The other solution you get, you should test and if you are up to it, review the code and the report.
+You should upload your solution to Blackboard before the lecture  17/4. Your TA will then pair up groups (if you haven’t done that already) and exchange your solution with another. The other solution you get, you should test and if you are up to it, review the code and the report.
 
 The solution you upload should contain code for building the program `search-st` (with the appropriate build tools for the programming language you have chosen), and a one-page Pdf file where you address the following questions:
 
