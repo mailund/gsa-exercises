@@ -2,7 +2,7 @@
 
 ## BWT search
 
-What is the worst-case running time for the BWT/Suffix-tree search? Think about what the size of the k-distance cloud of a string is. Can you give a tighter bound or determine cases where the BWT search is faster?
+What is the worst-case running time for the BWT/Suffix-tree search? Think about what the size of the k-distance cloud of a string is. Can you give a tighter bound or determine cases where the BWT/Suffix-tree search is faster than explicitly searching for all strings in the k-distance cloud?
 
 Consider algorithm 7.41 in the textbook, which contains an optimisation of the algorithm. Do exercises 7.9.10 and 7.9.11
 
