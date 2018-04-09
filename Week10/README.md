@@ -1,5 +1,11 @@
 # Genome-scale Algorithms Week 10 — exercises
 
+## BWT search
+
+What is the worst-case running time for the BWT/Suffix-tree search? Think about what the size of the k-distance cloud of a string is. Can you give a tighter bound or determine cases where the BWT search is faster?
+
+Consider algorithm 7.41 in the textbook, which contains an optimisation of the algorithm. Do exercises 7.9.10 and 7.9.11
+
 ## K-mer matching
 
 This is an open-ended exercise, so be inventive.
