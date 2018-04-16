@@ -52,5 +52,9 @@ The final step in the project is open-ended. For this step, you should use all t
 In the final evaluation of the project, you should present the tricks that gave you the best speed-ups. There might be a price to win for the fastest read mapper, or for the group that come up with the smartest speed-up trick, so if you are competitive, this is where you can compete. We aim for friendly competition here, so don’t be afraid to share ideas. We won’t just choose the winner of the competition based on the raw speed-up — although that will be part of the evaluation — but also the relative speedup you get from your ideas. So be honest if you borrow ideas but don’t be afraid to incorporate good ideas from other groups.
 
 
+## Deliverables
 
+* **26/4:** Add your exact read-mapper to the `evaluation/evaluate_mappers_exact.sh` script and leave the other options unchanged. Run `make evaluate`. Upload the resulting `evaluation-report-exact.txt` file to blackboard
+* **7/5:** Add your approximative read-mapper to the `evaluation/evaluate_mappers_approximative.sh` script and leave the other options unchanged. Run `make evaluate`. Upload the `evaluation-report-approximative.txt` file to to blackboard together with 1-2 slides describing the algorithm you have implemented and the programming language you have implemented it in.
+* **26/5:** Upload an updated `evaluation-report-approximative.txt` file. If you think it is worthwhile you can explore the parameters of the read-mapper to examine how your algorithm performs under different configurations. Also, upload 2-3 slides where you describe what you have done to improve the performance of your program.
 
