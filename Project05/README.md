@@ -41,7 +41,7 @@ As an initial solution you can produce all strings in desired “edit-sphere” 
 We suggest that you implement one of the following solutions:
 * Combine the edit-sphere around a read into a trie and use the Aho-Corsick algorithm to search for approximative matches. If you take this approach, you can use code you wrote in [Week 01](https://github.com/mailund/gsa-exercises/tree/master/Week01) to build the edit-sphere around a read.
 * Use your suffix-tree to implement a search algorithm as described in the [slides from Week 10](https://www.dropbox.com/s/rvqq3b2ja5ovrbt/GSA%20Week%2010.pdf?dl=0).
-* Adapt the Burrows-Wheeler exact pattern matching algorithm from [Project 4](https://github.com/mailund/gsa-exercises/tree/master/Project04) to implement the branch-and-bounds algorithm on page 378 (Algorithm 7.42) in the textbook.
+* Adapt the Burrows-Wheeler exact pattern matching algorithm from [Project 4](https://github.com/mailund/gsa-exercises/tree/master/Project04) to implement the branch-and-bounds algorithm on page 378 (Algorithm 7.41) in the textbook.
 
 If you use a suffix tree or a suffix array for your approximative pattern matching you should split preprocessing from searching in your tool, so the preprocessing step can be done, and the result saved to file(s), before the search.
 
